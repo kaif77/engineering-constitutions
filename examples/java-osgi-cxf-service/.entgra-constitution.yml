@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/entgra/engineering-constitutions/main/schema/entgra-constitution.schema.json
+schema_version: 1
+
+constitution:
+  release: "1.0.0"
+
+project:
+  name: "sample-java-osgi-cxf-service"
+  description: "Example Java service that will consume OSGi and CXF guidance"
+  repository: "https://github.com/entgra/sample-java-osgi-cxf-service"
+
+modules:
+  required:
+    - universal.engineering-principles
+    - universal.code-quality
+    - universal.testing
+    - universal.documentation
+    - universal.security
+    - universal.api-design
+    - universal.ai-assisted-development
+    - language.java
+    - middleware.osgi
+    - middleware.cxf
+  optional:
+    - framework.spring
+    - platform.docker
+    - platform.github-actions
+
+project_instructions:
+  path: "PROJECT_INSTRUCTIONS.md"

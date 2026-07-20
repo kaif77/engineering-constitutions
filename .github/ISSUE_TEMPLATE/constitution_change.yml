@@ -1,0 +1,24 @@
+name: Constitution change
+description: Propose a new or updated engineering constitution rule.
+title: "[Constitution]: "
+labels: ["constitution"]
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module ID
+      description: Existing or proposed module ID.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Compatibility and rollout impact
+    validations:
+      required: true

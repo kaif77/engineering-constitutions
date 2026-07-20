@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/entgra/engineering-constitutions/main/schema/entgra-constitution.schema.json
+schema_version: 1
+
+constitution:
+  release: "1.0.0"
+
+project:
+  name: "sample-react-application"
+  description: "Example React application"
+  repository: "https://github.com/entgra/sample-react-application"
+
+modules:
+  required:
+    - universal.engineering-principles
+    - universal.code-quality
+    - universal.testing
+    - universal.documentation
+    - universal.security
+    - universal.ai-assisted-development
+    - language.typescript
+    - framework.react
+  optional:
+    - platform.github-actions
+
+project_instructions:
+  path: "PROJECT_INSTRUCTIONS.md"
