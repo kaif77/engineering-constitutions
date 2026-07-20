@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# JetBrains IDE project files
+.idea/
+
+# Local editor state
+.vscode/
+*.swp
+*.swo
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Tool caches
+.cache/

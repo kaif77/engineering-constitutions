@@ -1,0 +1,20 @@
+name: Reusable Constitution Check
+
+on:
+  workflow_call:
+    inputs:
+      config-path:
+        required: false
+        type: string
+        default: ".entgra-constitution.yml"
+
+jobs:
+  constitution-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out consuming repository
+        uses: actions/checkout@v4
+      - name: Check project configuration exists
+        run: |
+          test -f "${{ inputs.config-path }}"
+          echo "Found ${{ inputs.config-path }}. Review it against the JSON Schema in engineering-constitutions."
